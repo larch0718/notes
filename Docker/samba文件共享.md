@@ -45,3 +45,10 @@ docker run -it -p 139:139 -p 445:445 \
 	* 指定具有写权限的用户；
 
 **使用参考[官方文档](https://github.com/dperson/samba)**
+
+### 开启/关闭容器
+**运行命令**
+```
+docker start samba # 开启容器
+docker stop samba #关闭容器
+```
