@@ -1,6 +1,13 @@
 Samba文件共享
 ====
 
+### 准备工作
+**创建共享文件夹并赋予权限**
+```
+sudo mkdir /shared
+sudo chmod 775 /shared
+```
+
 ### 拉取镜像
 **运行命令**
 ```
@@ -11,7 +18,7 @@ docker pull dperson/samba
 **运行命令**
 ```
 docker run -it -p 139:139 -p 445:445 \
--v ~/shared:/mount \
+-v /shared:/mount \
 --name samba \
 -d dperson/samba \
 -p \
