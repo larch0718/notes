@@ -22,7 +22,6 @@ sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent softwa
 **运行命令**
 ```
 curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
 ```
 ### 添加仓库
 ```
@@ -36,7 +35,7 @@ sudo add-apt-repository \
 **运行命令**
 ```
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install docker-ce
 ```
 ### 验证是否安装完成
 **运行命令**
